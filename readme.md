@@ -92,7 +92,7 @@ Visit: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
 
 ---
 
-### 👨‍💻 Key Features Implemented
+###  💻  Key Features Implemented
 
 1. **User Authentication (JWT-based)**
 
