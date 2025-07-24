@@ -1,0 +1,1018 @@
+{
+	"info": {
+		"_postman_id": "16338b3b-bd08-4045-bbf9-800f58532570",
+		"name": "healthcareapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42558858"
+	},
+	"item": [
+		{
+			"name": "api/auth/register/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"mason\",\r\n  \"email\": \"mason@google.com\",\r\n  \"password\": \"masonmount567\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/auth/register/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mason@google.com\",\r\n  \"password\": \"masonmount567\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/auth/login/?=",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/patients/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"zack lee\",\r\n  \"age\": 29,\r\n  \"gender\": \"Male\",\r\n  \"medical_history\": \"adhd\",\r\n  \"diagnosis\": \"depression\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/patients/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/patients/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/jon",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/patients/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/patients/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/jon",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/patients/10/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"patients",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/patients/{id}/PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/plain",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"feriha ozan\",\r\n  \"age\": 18,\r\n  \"gender\": \"Female\",\r\n  \"medical_history\": \"thyroid\",\r\n  \"diagnosis\": \"Mental Tiredness\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/patients/8/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"patients",
+						"8",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/patients/{id}/DELETE",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUyNjc4LCJpYXQiOjE3NTMzNTA4NzgsImp0aSI6Ijk0NDdjMjgwZGM3ZTRmOTNhN2E2ODQ4MzUwYTkzNGViIiwidXNlcl9pZCI6IjYifQ.rMoyLJeiRBFYUB-xq28mo2kSp-139LTGHg1dJ8vYyow",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/patients/8/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"patients",
+						"8",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/doctors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"name": "content-type",
+						"type": "text"
+					},
+					{
+						"key": "Content-Length",
+						"value": "<calculated when request is sent>",
+						"name": "content-length",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dr.James Parkinson \",\r\n  \"specialization\": \"Anesthesiology\",\r\n  \"contact\": \"1234567898\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/doctors/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/doctors/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/jon",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/doctors/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/doctors/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUyNjc4LCJpYXQiOjE3NTMzNTA4NzgsImp0aSI6Ijk0NDdjMjgwZGM3ZTRmOTNhN2E2ODQ4MzUwYTkzNGViIiwidXNlcl9pZCI6IjYifQ.rMoyLJeiRBFYUB-xq28mo2kSp-139LTGHg1dJ8vYyow",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/doctors/1/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/doctors/{id}/PUT",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUyNjc4LCJpYXQiOjE3NTMzNTA4NzgsImp0aSI6Ijk0NDdjMjgwZGM3ZTRmOTNhN2E2ODQ4MzUwYTkzNGViIiwidXNlcl9pZCI6IjYifQ.rMoyLJeiRBFYUB-xq28mo2kSp-139LTGHg1dJ8vYyow",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dr. Giulia Ferraro\",\r\n  \"specialization\": \"General Surgery\",\r\n  \"contact\": \"1234567890\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/doctors/1/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/doctors/{id}/DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/doctors/3/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/mappings/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUyNjc4LCJpYXQiOjE3NTMzNTA4NzgsImp0aSI6Ijk0NDdjMjgwZGM3ZTRmOTNhN2E2ODQ4MzUwYTkzNGViIiwidXNlcl9pZCI6IjYifQ.rMoyLJeiRBFYUB-xq28mo2kSp-139LTGHg1dJ8vYyow",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"patient\": 10,\r\n  \"doctor\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/mappings/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"mappings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/mappings/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/mappings/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"mappings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/mappings/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/mappings/10/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"mappings",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/mappings/patient/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMzUzODU4LCJpYXQiOjE3NTMzNTIwNTgsImp0aSI6IjRmMjdmYTFiMzJjNjQzNDg4MDhmNDgwMGM4NmJhN2Q5IiwidXNlcl9pZCI6IjgifQ.4vnILa55yK6ceJKlAuPxrvKDQmk5TPz6V_uEO0-VPEM",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/mappings/patient/6/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"mappings",
+						"patient",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://127.0.0.1:8000",
+			"type": "default"
+		}
+	]
+}
