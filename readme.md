@@ -134,5 +134,3 @@ Visit: /admin/
 * Data can also be added via Django Admin for easy testing and relationships.
 
 ---
-
-> 💡 This project was built from scratch for the WhatBytes Backend Intern Assignment (Django).
